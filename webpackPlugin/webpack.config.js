@@ -38,7 +38,7 @@ module.exports={
             //处理字体文件，内部依赖 file-loader
             {test:/\.(ttf|svg|eot|woff|woff2)$/,use:'url-loader'},
             //处理js高级语法，不处理node_module文件中引入的js文件
-            {test:/\.js/,use:"babel-loader",exclude:/node_module/}
+            {test:/\.js/,use:"babel-loader",exclude:/node_modules/}
         ]
     }
 }
